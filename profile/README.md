@@ -1,96 +1,212 @@
-💻 RPL / PPLG Organization
-📌 Tentang Kami
+# 💻 pplg-team
 
-Organisasi ini dibuat sebagai pusat kolaborasi resmi jurusan Rekayasa Perangkat Lunak (RPL) dan Pengembangan Perangkat Lunak dan Gim (PPLG).
+## 📌 Tentang Kami
 
-Kami mengelola:
+Organisasi ini merupakan pusat kolaborasi resmi jurusan **Rekayasa Perangkat Lunak (RPL)** dan **Pengembangan Perangkat Lunak dan Gim (PPLG)**.
 
-Repository proyek akhir siswa
+Repository ini dibangun sebagai sistem manajemen proyek terpusat untuk:
 
-Dokumentasi teknis
+* Pengelolaan proyek akhir siswa
+* Dokumentasi teknis dan arsitektur sistem
+* Kolaborasi pengembangan berbasis tim
+* Implementasi standar rekayasa perangkat lunak
+* Arsip dan portofolio digital jurusan
 
-Kolaborasi tim
+Organisasi ini dirancang untuk membentuk kultur engineering yang profesional, sistematis, dan siap industri.
 
-Standar pengembangan perangkat lunak
+---
 
-Organisasi ini bertujuan membangun kultur engineering yang profesional, terstruktur, dan kolaboratif.
+## 🎯 Tujuan Organisasi
 
-🎯 Tujuan Organisasi
+1. Menyentralisasi seluruh proyek akhir jurusan dalam satu sistem version control terstruktur
+2. Menerapkan praktik Software Engineering yang sesuai standar industri
+3. Meningkatkan kolaborasi lintas tim dan lintas angkatan
+4. Mendokumentasikan karya siswa secara profesional dan berkelanjutan
+5. Menjadi portofolio resmi jurusan untuk kebutuhan akreditasi dan publikasi
 
-Menyentralisasi seluruh proyek akhir jurusan
+---
 
-Menerapkan standar version control yang baik
+## 🏗️ Struktur Organisasi Repository
 
-Meningkatkan kolaborasi antar siswa
+Struktur umum repository dalam organisasi ini:
 
-Mendokumentasikan hasil karya secara profesional
-
-Menjadi portofolio resmi jurusan
-
-📂 Struktur Repository
-
-Struktur umum repository di organisasi ini:
-
-final-project-2026-team-a
-
-final-project-2026-team-b
-
+```
+final-project-[tahun]-[nama-tim]
 learning-resources
-
 discussion-notes
-
 templates
+organization-guidelines
+```
 
-Setiap proyek akhir wajib memiliki:
+Contoh:
 
-README lengkap
+```
+final-project-2026-team-a
+final-project-2026-team-b
+```
 
-Dokumentasi fitur
+---
 
-Struktur folder yang rapi
+## 📁 Standar Struktur Repository Proyek Akhir
 
-Issue tracking aktif
+Setiap repository proyek akhir WAJIB memiliki struktur minimal berikut:
 
-Branching strategy yang jelas
+```
+/docs
+/src
+/public (jika web project)
+/assets
+/tests (opsional)
+/README.md
+/.env.example
+/.gitignore
+```
 
-🛠️ Standar Pengembangan
+---
 
-Kami menerapkan praktik berikut:
+## 📘 Standar README Proyek Akhir
 
-Git Flow atau trunk-based development
+README proyek wajib memuat:
 
-Pull Request untuk setiap perubahan
+* Deskripsi Proyek
+* Latar Belakang
+* Tujuan Sistem
+* Fitur Utama
+* Teknologi yang Digunakan
+* Struktur Folder
+* Diagram (ERD, UML, Arsitektur)
+* Cara Instalasi
+* Cara Menjalankan Project
+* Role & Tim Pengembang
+* Lisensi (jika ada)
 
-Code Review sebelum merge
+---
 
-Conventional Commit (optional tapi disarankan)
+## 🔄 Standar Version Control & Workflow
 
-Dokumentasi minimal dalam README
+Organisasi ini menerapkan praktik berikut:
 
-🤝 Kontribusi
+### 1. Branching Strategy
 
-Untuk berkontribusi:
+Menggunakan salah satu dari:
 
-Fork repository (jika diperlukan)
+* Git Flow
+* Trunk-Based Development
 
-Buat branch baru
+Branch minimum:
 
-Lakukan perubahan
+* `main` → production-ready
+* `develop` → integration branch
+* `feature/nama-fitur`
+* `fix/nama-bug`
 
-Buat Pull Request
+### 2. Pull Request Policy
 
-Tunggu review dari maintainer
+* Semua perubahan wajib melalui Pull Request
+* Tidak diperbolehkan commit langsung ke branch `main`
+* Minimal 1 reviewer sebelum merge
 
-👨‍💻 Maintainer
+### 3. Commit Convention (Disarankan)
+
+Menggunakan Conventional Commit:
+
+```
+feat: menambahkan fitur login
+fix: memperbaiki bug validasi
+docs: update dokumentasi API
+refactor: perbaikan struktur controller
+```
+
+---
+
+## 🧪 Standar Kualitas Kode
+
+Setiap tim wajib memperhatikan:
+
+* Clean code
+* Naming convention konsisten
+* Struktur folder terorganisir
+* Tidak menyimpan file sensitif (.env, credential)
+* Dokumentasi fungsi penting
+
+---
+
+## 📊 Manajemen Proyek
+
+Disarankan menggunakan:
+
+* GitHub Issues untuk tracking task
+* GitHub Projects untuk manajemen sprint
+* Milestones untuk timeline proyek
+* GitHub Discussions untuk forum diskusi teknis
+
+---
+
+## 🤝 Prosedur Kontribusi
+
+Langkah kontribusi standar:
+
+1. Buat branch baru dari `develop`
+2. Lakukan perubahan
+3. Commit sesuai standar
+4. Push ke repository
+5. Buat Pull Request
+6. Tunggu proses review
+7. Merge setelah disetujui
+
+---
+
+## 🔐 Aturan Keamanan
+
+* Dilarang mengunggah file `.env`
+* Dilarang mengunggah API key atau credential
+* Gunakan `.env.example`
+* Aktifkan branch protection pada `main`
+* Gunakan role permission GitHub dengan tepat
+
+---
+
+## 👨‍💻 Struktur Kepengurusan
 
 Organisasi ini dikelola oleh:
 
-Ketua Jurusan / Guru Pembimbing
+* Ketua Jurusan / Guru Pembimbing (Owner)
+* Koordinator Proyek (Maintainer)
+* Admin GitHub Organization
+* Lead Developer per Tim
 
-Koordinator Proyek
+---
 
-Admin Organisasi GitHub
+## 📅 Skema Pengelolaan Lintas Angkatan
 
-🚀 Visi Jangka Panjang
+Organisasi ini dirancang untuk digunakan lintas angkatan dengan pola:
 
-Menjadi pusat dokumentasi dan portofolio digital resmi jurusan RPL/PPLG yang profesional dan siap industri.
+```
+final-project-2026-*
+final-project-2027-*
+final-project-2028-*
+```
+
+Dengan demikian, repository akan menjadi arsip berkelanjutan dan dokumentasi historis jurusan.
+
+---
+
+## 🚀 Visi Jangka Panjang
+
+Menjadi pusat dokumentasi dan portofolio digital resmi jurusan RPL/PPLG yang:
+
+* Berstandar industri
+* Siap audit akademik
+* Siap dipresentasikan ke mitra industri
+* Menjadi showcase kemampuan siswa
+* Membangun budaya engineering yang disiplin dan profesional
+
+---
+
+## 📌 Nilai Utama Organisasi
+
+* Kolaboratif
+* Terstruktur
+* Profesional
+* Transparan
+* Berorientasi kualitas
